@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "lightpanda": {
+      "type": "stdio",
+      "command": "/usr/local/bin/lightpanda",
+      "args": ["mcp"],
+      "env": {
+        "LIGHTPANDA_DISABLE_TELEMETRY": "true"
+      }
+    }
+  }
+}

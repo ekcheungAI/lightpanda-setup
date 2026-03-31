@@ -1,0 +1,14 @@
+[Unit]
+Description=LightPanda Headless Browser CDP Server
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+Environment=LIGHTPANDA_DISABLE_TELEMETRY=true
+ExecStart=/usr/local/bin/lightpanda serve --host 127.0.0.1 --port 9222 --log-level warn
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
